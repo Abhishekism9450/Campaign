@@ -5,7 +5,7 @@ import { CampaignComponent } from './components/campaign/campaign.component';
 
 
 const routes: Routes = [
-  {path:'', component: CampaignComponent}
+  {path:'campaign', component: CampaignComponent}
 ];
 
 @NgModule({

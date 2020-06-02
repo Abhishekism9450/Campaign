@@ -1,0 +1,36 @@
+ <mat-grid-list cols="2">
+  <mat-grid-tile>
+    <img src="https://images.unsplash.com/photo-1544516726-e76fb65cffc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div>
+      <h2>Welcome to Campaign</h2>
+    <br>
+    <form [formGroup]="profileForm">
+      <div>
+        <label>First Name</label>
+        <br>
+        <input type="text" style="
+            line-height: 2em;
+            width: 100%;
+            border: 1px solid;"
+            formControlName="firstName">
+      </div>
+      <br>
+      <div>
+        <label>Last Names</label>
+        <br>
+        <input type="text" style="
+        line-height: 2em;
+        width: 100%;
+        border: 1px solid;" formControlName="lastName">      
+      </div>
+      <br>
+
+      <div>
+        <button mat-raised-button color="primary" (click)="validate(profileForm.value)">Submit</button>
+      </div>
+    </form>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
